@@ -5,9 +5,8 @@
 	<resultMap id="getMenuAndChildMenusMap" type="menu">
 		<id property="id" column="ID"/>
 		<result property="pId" column="PID"/>
-		<result property="name" column="NAME"/>
-		<result property="icon" column="ICON"/>
-		<result property="url" column="URL"/>
+		<result property="name" column="MENU_NAME"/>
+		<result property="url" column="MENU_URL"/>
 
 		<collection property="childMenus" column="ID" select="getChildMenuByPID"></collection>
 
