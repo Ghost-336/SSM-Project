@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 引入属性文件 -->
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+
+    <aop:config>
+        <aop:pointcut id="businessService" expression="execution(* cn.edu.guet.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="businessService"/>
+    </aop:config>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" rollback-for="" no-rollback-for="Exception"/>
+            <tx:method name="update*" rollback-for=""/>
+            <tx:method name="delete*" rollback-for=""/>
+            <tx:method name="*" read-only="true" />
+        </tx:attributes>
+    </tx:advice>
+    <!-- 为什么Spring框架只实现了事务，而没有实现安全、日志等...... -->
+
+    <!-- DataSourceTransactionManager就像我们自己实现的TransactionHandler（用JDK的动态代理） -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 数据源 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <!-- results in a setDriverClassName(String) call -->
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <!-- 读取mybatis原生的配置文件 -->
+        <property name="configLocation" value="classpath:configuration.xml"></property>
+        <property name="mapperLocations" value="classpath:/cn/edu/guet/mapper/*Mapper.xml"></property>
+        <property name="typeAliasesPackage" value="cn.edu.guet.model"></property>
+    </bean>
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.edu.guet.mapper"></property>
+    </bean>
+</beans>

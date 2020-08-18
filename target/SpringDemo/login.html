@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("login").onclick = login;
+        }
+
+        function login() {
+            username = document.getElementById("username").value;
+            console.log(username);
+            password = document.getElementById("password").value;
+            console.log(password);
+            xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = showResult;
+            xhr.open("POST", "user/login");
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xhr.send("username=" + username + "&password=" + password);
+        }
+        function showResult(){
+            if(xhr.readyState==4){
+                if(xhr.status==200){
+                    console.log(xhr.responseText);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <label for="username">用户名：</label><input type="text" id="username" name="username">
+    <label for="password">密码：</label><input type="text" id="password" name="password">
+
+    <input type="button" value="登录" id="login">
+</body>
+</html>
