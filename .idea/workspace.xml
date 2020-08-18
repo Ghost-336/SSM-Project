@@ -6,7 +6,31 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd92bc77-c660-4938-8cd5-9c7d5e50f701" name="Default Changelist" comment="" />
+    <list default="true" id="fd92bc77-c660-4938-8cd5-9c7d5e50f701" name="Default Changelist" comment="点击登录，将菜单打印出来">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/guet/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/guet/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/edu/guet/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/guet/SpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/cn/edu/guet/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringDemo/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/common/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/common/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/guet/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/guet/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/edu/guet/SpringTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/edu/guet/SpringTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +47,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -34,7 +61,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\m2\repository" />
-        <option name="mavenHome" value="E:/apache-maven-3.6.1" />
+        <option name="mavenHome" value="C:/apache-maven-3.6.1" />
         <option name="userSettingsFile" value="E:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -47,13 +74,15 @@
   <component name="ProjectId" id="1g2Jzn6BnIqurVw0Y7mGTG3aIAc" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/edu/guet/common" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/oracle/ojdbc6.jar!/" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -81,7 +110,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Vue">
+    <configuration name="SpringTest.getAllMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.guet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.guet" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.guet.SpringTest" />
+      <option name="METHOD_NAME" value="getAllMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Vue" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SpringDemo/login.html" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -155,6 +200,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringTest.getAllMenu" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -179,10 +229,43 @@
       <workItem from="1597639283514" duration="6335000" />
       <workItem from="1597715533090" duration="423000" />
       <workItem from="1597718258327" duration="7000" />
+      <workItem from="1597723788026" duration="1415000" />
+      <workItem from="1597734476576" duration="1968000" />
+      <workItem from="1597736636153" duration="720000" />
+      <workItem from="1597737421516" duration="638000" />
+      <workItem from="1597738167857" duration="355000" />
+      <workItem from="1597738717961" duration="5324000" />
+      <workItem from="1597744600993" duration="1586000" />
+      <workItem from="1597749108999" duration="320000" />
     </task>
+    <task id="LOCAL-00001" summary="点击登录，将菜单打印出来">
+      <created>1597749250810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597749250810</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="点击登录，将菜单打印出来" />
+    <option name="LAST_COMMIT_MESSAGE" value="点击登录，将菜单打印出来" />
   </component>
 </project>

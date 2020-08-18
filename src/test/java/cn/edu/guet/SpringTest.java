@@ -1,5 +1,7 @@
 package cn.edu.guet;
 
+import cn.edu.guet.model.Menu;
+import cn.edu.guet.service.IUserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
